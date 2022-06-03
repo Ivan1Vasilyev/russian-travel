@@ -1,0 +1,6 @@
+.content {
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+  column-gap: 92px;
+}
