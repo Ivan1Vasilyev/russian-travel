@@ -1,8 +1,21 @@
 .header__links {
-  margin: 0;
+  margin: 46px 48px 0 0;
   padding: 0;
   list-style: none;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 18px;
+}
+
+@media screen and (max-width: 895px) {
+  .header__links {
+    margin-right: 24px;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .header__links {
+    margin-top: 30px;
+    margin-right: 16px;
+  }
 }

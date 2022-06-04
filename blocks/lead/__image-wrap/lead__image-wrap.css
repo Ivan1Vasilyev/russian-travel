@@ -1,0 +1,16 @@
+.lead__image-wrap {
+  display: block;
+  margin: 0 148px;
+}
+
+@media screen and (max-width:1140px) {
+  .lead__image-wrap {
+    margin: 0 48px;
+  }
+}
+
+@media screen and (max-width: 895px) {
+  .lead__image-wrap {
+    margin: 0;
+  }
+}
