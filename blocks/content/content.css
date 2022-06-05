@@ -1,6 +1,7 @@
 .content {
   margin: 0 auto;
   display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
   align-items: center;
-  column-gap: 92px;
+  row-gap: 92px;
 }
