@@ -1,17 +1,17 @@
 .places__image {
   grid-area: image;
-  width: calc(100% - 32px)
+  width: calc(100% - 32px);
 }
 
 @media screen and (max-width: 1140px) {
   .places__image {
-    width: calc(100% - 24px)
+    width: calc(100% - 24px);
   }
 }
 
 @media screen and (max-width: 895px) {
   .places__image {
-    width: calc(100% - 20px)
+    width: calc(100% - 20px);
   }
 }
 
