@@ -1,4 +1,4 @@
-.header__links {
+.header__lang-list {
   margin: 46px 48px 0 0;
   padding: 0;
   list-style: none;
@@ -8,13 +8,13 @@
 }
 
 @media screen and (max-width: 895px) {
-  .header__links {
+  .header__lang-list {
     margin-right: 24px;
   }
 }
 
 @media screen and (max-width: 544px) {
-  .header__links {
+  .header__lang-list {
     margin-top: 30px;
     margin-right: 16px;
   }

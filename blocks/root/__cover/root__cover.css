@@ -1,0 +1,23 @@
+.root__cover {
+  margin: 0 48px 92px;
+}
+
+@media screen and (max-width: 1140px) {
+  .root__cover {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 895px) {
+  .root__cover {
+    margin-bottom: 88px;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .root__cover {
+    margin-bottom: 64px;
+  }
+}
+

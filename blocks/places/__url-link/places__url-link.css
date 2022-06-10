@@ -1,0 +1,18 @@
+.places__url-link {
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.22;
+  margin-bottom: 46px;
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+}
+
+.places__url-link:hover {
+  opacity: .8;
+}
+
+@media screen and (max-width: 631px) {
+  .places__url-link {
+    margin-bottom: 0;
+  }
+}

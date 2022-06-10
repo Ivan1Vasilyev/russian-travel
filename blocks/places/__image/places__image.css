@@ -1,0 +1,22 @@
+.places__image {
+  grid-area: image;
+  width: calc(100% - 32px)
+}
+
+@media screen and (max-width: 1140px) {
+  .places__image {
+    width: calc(100% - 24px)
+  }
+}
+
+@media screen and (max-width: 895px) {
+  .places__image {
+    width: calc(100% - 20px)
+  }
+}
+
+@media screen and (max-width: 631px) {
+  .places__image {
+    width: 100%;
+  }
+}
