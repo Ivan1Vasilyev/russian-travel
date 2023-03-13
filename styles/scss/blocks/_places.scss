@@ -1,0 +1,124 @@
+.places {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(581px, 1fr));
+  justify-items: center;
+  gap: 80px;
+
+  @media screen and (max-width: $laptop-width) {
+    gap: 72px;
+  }
+  @media screen and (max-width: $mobile-width-places) {
+    gap: 50px;
+  }
+
+  &__item {
+    max-width: 984px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      'title website'
+      'image paragraph';
+
+    @media screen and (max-width: $desktop-width) {
+      margin: 0 48px;
+    }
+    @media screen and (max-width: $laptop-width) {
+      margin: 0 24px;
+    }
+    @media screen and (max-width: $mobile-width-places) {
+      margin: 0;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        'title'
+        'website'
+        'image'
+        'paragraph';
+      row-gap: 32px;
+    }
+  }
+
+  &__paragraph {
+    @include font-size-height(18px, 1.63);
+    margin: 0 0 26px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    @media screen and (max-width: $laptop-width) {
+      font-size: 16px;
+    }
+  }
+
+  &__image {
+    grid-area: image;
+    width: calc(100% - 32px);
+
+    @media screen and (max-width: $desktop-width) {
+      width: calc(100% - 24px);
+    }
+    @media screen and (max-width: $laptop-width) {
+      width: calc(100% - 20px);
+    }
+    @media screen and (max-width: $mobile-width-places) {
+      width: 100%;
+    }
+  }
+
+  &__text {
+    padding-left: 8px;
+    grid-area: paragraph;
+
+    @media screen and (max-width: $mobile-width-places) {
+      margin: 0 16px 0 8px;
+    }
+  }
+
+  &__title {
+    @include font-size-height(72px, 1.06);
+    font-weight: $font-bolder;
+    max-width: 540px;
+    margin: 0 0 48px;
+    grid-area: title;
+
+    @media screen and (max-width: $laptop-width) {
+      @include font-size-height(18px, 1.09);
+      max-width: 320px;
+    }
+    @media screen and (max-width: $mobile-width-places) {
+      margin: 0 0 0 16px;
+      @include font-size-height(32px, 1.09);
+    }
+  }
+
+  &__url-heading {
+    color: $gray-font;
+    @include font-size-height(12px, 1);
+    letter-spacing: 2px;
+    margin: 0 0 12px;
+  }
+
+  &__url-link {
+    @include font-size-height(18px, 1.22);
+    margin-bottom: 46px;
+    @extend %link;
+    @extend %underline;
+
+    @media screen and (max-width: $mobile-width-places) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__website {
+    grid-area: website;
+    @extend %flex-column;
+    justify-content: end;
+    align-items: flex-start;
+    padding-left: 8px;
+
+    @media screen and (max-width: $mobile-width-places) {
+      margin-left: 8px;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+%link {
+  color: $main-font-color;
+  text-decoration: none;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+%underline {
+  border-bottom: 1px solid $main-font-color;
+}
+
+%list {
+  list-style: none;
+  padding: 0;
+}
+
+%flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+%image-cover {
+  width: 100%;
+  object-fit: cover;
+}

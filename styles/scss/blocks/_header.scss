@@ -1,0 +1,51 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  &__logo {
+    background-image: url(../../../images/__logo.svg);
+    background-size: cover;
+    width: 176px;
+    height: 52px;
+    margin: 28px 0 0 48px;
+
+    @media screen and (max-width: $laptop-width) {
+      margin-left: 24px;
+    }
+
+    @media screen and (max-width: $mobile-width) {
+      width: 142px;
+      height: 42px;
+      margin: 16px 0 0 16px;
+    }
+  }
+
+  &__lang-list {
+    margin: 46px 48px 0 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 18px;
+    @extend %list;
+
+    @media screen and (max-width: $laptop-width) {
+      margin-right: 24px;
+    }
+
+    @media screen and (max-width: $mobile-width) {
+      margin: 30px 16px 0 0;
+    }
+  }
+
+  &__lang-link {
+    @include font-size-height(24px, 1.16);
+    @extend %link;
+
+    @media screen and (max-width: $mobile-width) {
+      @include font-size-height(18px, 1.11);
+    }
+
+    &_selected {
+      @extend %underline;
+    }
+  }
+}

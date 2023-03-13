@@ -1,0 +1,68 @@
+.cover {
+  position: relative;
+
+  &__overlay {
+    min-height: 740px;
+    width: 100%;
+    background-image: url(../../../images/cover_background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    @extend %flex-column;
+    justify-content: center;
+    align-items: center;
+    @extend %link;
+
+    &::after {
+      content: '';
+      position: absolute;
+      background-color: rgba(42, 44, 47, 0.3);
+      width: 100%;
+      height: 100%;
+      transition: 0.5s;
+    }
+
+    &:hover::after {
+      background-color: rgba(42, 44, 47, 0.8);
+    }
+
+    @media screen and (max-width: $desktop-width) {
+      min-height: 640px;
+    }
+    @media screen and (max-width: $laptop-width) {
+      min-height: 480px;
+    }
+    @media screen and (max-width: $mobile-width) {
+      background-image: url(../../../images/cover_background_640x400.jpg);
+      min-height: 200px;
+    }
+  }
+
+  &__title {
+    @include font-size-height(72px, 1.06);
+    font-weight: $font-bolder;
+    max-width: 560px;
+    text-align: center;
+    margin: 0 0 32px;
+    z-index: 2;
+
+    @media screen and (max-width: $mobile-width) {
+      @include font-size-height(32px, 1.09);
+      margin-bottom: 16px;
+      max-width: 250px;
+    }
+  }
+
+  &__subtitle {
+    @include font-size-height(18px, 1.22);
+    max-width: 360px;
+    text-align: center;
+    margin: 0;
+    z-index: 2;
+
+    @media screen and (max-width: $mobile-width) {
+      @include font-size-height(14px, 1.14);
+      margin: 0 16px;
+    }
+  }
+}

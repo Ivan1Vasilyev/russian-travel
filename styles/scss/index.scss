@@ -1,0 +1,15 @@
+@import './common/reset';
+@import './common/variables';
+@import './common/mixin';
+@import './fonts/fonts';
+@import './common/extends';
+
+@import './blocks/root';
+@import './blocks/header';
+@import './blocks/main';
+@import './blocks/lead';
+@import './blocks/intro';
+@import './blocks/photo';
+@import './blocks/places';
+@import './blocks/cover';
+@import './blocks/footer';

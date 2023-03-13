@@ -1,0 +1,12 @@
+@font-face {
+  @include font-face($font-normal, '../scss/fonts/Inter-Regular.woff');
+}
+
+@font-face {
+  @include font-face($font-bold, '../scss/fonts/Inter-Bold.woff');
+}
+
+@font-face {
+  @include font-face($font-bolder, '../scss/fonts/Inter-Black.woff');
+  font-display: swap;
+}

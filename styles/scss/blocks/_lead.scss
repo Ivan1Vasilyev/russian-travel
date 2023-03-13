@@ -1,0 +1,70 @@
+.lead {
+  @extend %flex-column;
+  align-items: center;
+
+  &__caption {
+    @include font-size-height(10px, 1.4);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-top: 6px;
+
+    @media screen and (max-width: $laptop-width) {
+      margin-left: 24px;
+    }
+    @media screen and (max-width: $mobile-width) {
+      margin: 4px 0 0 14px;
+    }
+  }
+
+  &__image {
+    @extend %image-cover;
+  }
+
+  &__image-wrap {
+    margin: 0 148px;
+
+    @media screen and (max-width: $laptop-width) {
+      margin: 0 48px;
+    }
+    @media screen and (max-width: $mobile-width) {
+      margin: 0;
+    }
+  }
+
+  &__subtitle {
+    max-width: 640px;
+    @include font-size-height(30px, 1.2);
+    text-align: center;
+    margin: 0 auto 64px;
+
+    @media screen and (max-width: $desktop-width) {
+      margin-bottom: 56px;
+    }
+    @media screen and (max-width: $laptop-width) {
+      max-width: 288px;
+      @include font-size-height(16px, 1.25);
+    }
+    @media screen and (max-width: $mobile-width) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__title {
+    max-width: 720px;
+    @include font-size-height(96px, 1.04);
+    font-weight: $font-bolder;
+    text-align: center;
+    margin: 56px auto 32px;
+
+    @media screen and (max-width: $desktop-width) {
+      margin-top: 48px;
+    }
+    @media screen and (max-width: $laptop-width) {
+      max-width: 288px;
+      @include font-size-height(40px, 1.1);
+    }
+    @media screen and (max-width: $mobile-width) {
+      margin-bottom: 16px;
+    }
+  }
+}
