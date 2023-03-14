@@ -1,3 +1,5 @@
+@use '../common/main' as m;
+
 .main {
   margin: 0 auto;
   display: grid;
@@ -5,11 +7,11 @@
   align-items: center;
   row-gap: 92px;
 
-  @media screen and (max-width: $laptop-width) {
+  @media screen and (max-width: m.$laptop-width) {
     row-gap: 88px;
   }
 
-  @media screen and (max-width: $tablet-width) {
+  @media screen and (max-width: m.$tablet-width) {
     row-gap: 64px;
   }
 }

@@ -309,25 +309,6 @@ template {
   display: none;
 }
 
-@font-face {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../scss/fonts/Inter-Regular.woff2") format("woff2"), url("../scss/fonts/Inter-Regular.woff") format("woff");
-}
-@font-face {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../scss/fonts/Inter-Bold.woff2") format("woff2"), url("../scss/fonts/Inter-Bold.woff") format("woff");
-}
-@font-face {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 900;
-  src: url("../scss/fonts/Inter-Black.woff2") format("woff2"), url("../scss/fonts/Inter-Black.woff") format("woff");
-  font-display: swap;
-}
 .footer__link, .cover__overlay, .places__url-link, .header__lang-link {
   color: #fff;
   text-decoration: none;
@@ -355,6 +336,25 @@ template {
   object-fit: cover;
 }
 
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../scss/fonts/Inter-Regular.woff2") format("woff2"), url("../scss/fonts/Inter-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../scss/fonts/Inter-Bold.woff2") format("woff2"), url("../scss/fonts/Inter-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../scss/fonts/Inter-Black.woff2") format("woff2"), url("../scss/fonts/Inter-Black.woff") format("woff");
+  font-display: swap;
+}
 .root {
   font-family: Inter, Arial, sans-serif;
   background: #2a2c2f;
@@ -775,7 +775,7 @@ template {
 }
 @media screen and (max-width: 631px) {
   .cover__overlay {
-    background-image: url(../../../images/cover_background_640x400.jpg);
+    background-image: url(../../images/cover_background_640x400.jpg);
     min-height: 200px;
   }
 }

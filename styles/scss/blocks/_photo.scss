@@ -1,3 +1,5 @@
+@use '../common/main' as m;
+
 .photo {
   &__wrap {
     margin: 0 48px;
@@ -7,14 +9,14 @@
     gap: 16px;
     @extend %list;
 
-    @media screen and (max-width: $desktop-width) {
+    @media screen and (max-width: m.$desktop-width) {
       gap: 14px;
     }
-    @media screen and (max-width: $laptop-width) {
+    @media screen and (max-width: m.$laptop-width) {
       margin: 0 24px;
       gap: 16px;
     }
-    @media screen and (max-width: $tablet-width) {
+    @media screen and (max-width: m.$tablet-width) {
       margin: 0 16px;
       gap: 12px;
     }

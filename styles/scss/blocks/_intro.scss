@@ -1,34 +1,36 @@
+@use '../common/main' as m;
+
 .intro {
   @extend %flex-column;
   max-width: 690px;
 
-  @media screen and (max-width: $laptop-width) {
+  @media screen and (max-width: m.$laptop-width) {
     max-width: 100%;
   }
 
   &__list {
     margin: 0;
-    @include font-size-height(12px, 1.5);
-    font-weight: $font-bold;
+    @include m.font-size-height(12px, 1.5);
+    font-weight: m.$font-bold;
     @extend %list;
   }
 
   &__number-in-list {
-    font-weight: $font-normal;
+    font-weight: m.$font-normal;
   }
 
   &__text {
     margin: 40px auto 33px;
-    @include font-size-height(16px, 1.63);
+    @include m.font-size-height(16px, 1.63);
   }
 
   &__title {
     margin: 0;
-    @include font-size-height(54px, 1.07);
-    font-weight: $font-bolder;
+    @include m.font-size-height(54px, 1.07);
+    font-weight: m.$font-bolder;
 
-    @media screen and (max-width: $tablet-width) {
-      @include font-size-height(32px, 1.09);
+    @media screen and (max-width: m.$tablet-width) {
+      @include m.font-size-height(32px, 1.09);
     }
   }
 }

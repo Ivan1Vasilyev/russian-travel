@@ -1,13 +1,14 @@
+@use '../common/main' as m;
 .places {
   display: grid;
   grid-template-rows: repeat(auto-fit, minmax(581px, 1fr));
   justify-items: center;
   gap: 80px;
 
-  @media screen and (max-width: $laptop-width) {
+  @media screen and (max-width: m.$laptop-width) {
     gap: 72px;
   }
-  @media screen and (max-width: $mobile-width) {
+  @media screen and (max-width: m.$mobile-width) {
     gap: 50px;
   }
 
@@ -20,13 +21,13 @@
       'title website'
       'image paragraph';
 
-    @media screen and (max-width: $laptop-width) {
+    @media screen and (max-width: m.$laptop-width) {
       margin: 0 24px;
     }
-    @media screen and (max-width: $tablet-width) {
+    @media screen and (max-width: m.$tablet-width) {
       margin: 0 16px;
     }
-    @media screen and (max-width: $mobile-width) {
+    @media screen and (max-width: m.$mobile-width) {
       margin: 0;
       grid-template-columns: 1fr;
       grid-template-areas:
@@ -39,14 +40,14 @@
   }
 
   &__paragraph {
-    @include font-size-height(18px, 1.63);
+    @include m.font-size-height(18px, 1.63);
     margin: 0 0 26px;
 
     &:last-of-type {
       margin-bottom: 0;
     }
 
-    @media screen and (max-width: $laptop-width) {
+    @media screen and (max-width: m.$laptop-width) {
       font-size: 16px;
     }
   }
@@ -55,13 +56,13 @@
     grid-area: image;
     width: calc(100% - 32px);
 
-    @media screen and (max-width: $desktop-width) {
+    @media screen and (max-width: m.$desktop-width) {
       width: calc(100% - 24px);
     }
-    @media screen and (max-width: $laptop-width) {
+    @media screen and (max-width: m.$laptop-width) {
       width: calc(100% - 20px);
     }
-    @media screen and (max-width: $mobile-width) {
+    @media screen and (max-width: m.$mobile-width) {
       width: 100%;
     }
   }
@@ -70,42 +71,42 @@
     padding-left: 8px;
     grid-area: paragraph;
 
-    @media screen and (max-width: $mobile-width) {
+    @media screen and (max-width: m.$mobile-width) {
       margin: 0 16px 0 8px;
     }
   }
 
   &__title {
-    @include font-size-height(72px, 1.06);
-    font-weight: $font-bolder;
+    @include m.font-size-height(72px, 1.06);
+    font-weight: m.$font-bolder;
     max-width: 540px;
     margin: 0 0 48px;
     grid-area: title;
 
-    @media screen and (max-width: $laptop-width) {
-      @include font-size-height(42px, 1.09);
+    @media screen and (max-width: m.$laptop-width) {
+      @include m.font-size-height(42px, 1.09);
       max-width: 320px;
     }
-    @media screen and (max-width: $mobile-width) {
+    @media screen and (max-width: m.$mobile-width) {
       margin: 0 0 0 16px;
-      @include font-size-height(32px, 1.09);
+      @include m.font-size-height(32px, 1.09);
     }
   }
 
   &__url-heading {
-    color: $gray-font;
-    @include font-size-height(12px, 1);
+    color: m.$gray-font;
+    @include m.font-size-height(12px, 1);
     letter-spacing: 2px;
     margin: 0 0 12px;
   }
 
   &__url-link {
-    @include font-size-height(18px, 1.22);
+    @include m.font-size-height(18px, 1.22);
     margin-bottom: 46px;
     @extend %link;
     @extend %underline;
 
-    @media screen and (max-width: $mobile-width) {
+    @media screen and (max-width: m.$mobile-width) {
       margin-bottom: 0;
     }
   }
@@ -117,7 +118,7 @@
     align-items: flex-start;
     padding-left: 8px;
 
-    @media screen and (max-width: $mobile-width) {
+    @media screen and (max-width: m.$mobile-width) {
       margin-left: 8px;
     }
   }

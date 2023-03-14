@@ -1,3 +1,5 @@
+@use '../common/main' as m;
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -9,11 +11,11 @@
     height: 52px;
     margin: 28px 0 0 48px;
 
-    @media screen and (max-width: $laptop-width) {
+    @media screen and (max-width: m.$laptop-width) {
       margin-left: 24px;
     }
 
-    @media screen and (max-width: $tablet-width) {
+    @media screen and (max-width: m.$tablet-width) {
       width: 142px;
       height: 42px;
       margin: 16px 0 0 16px;
@@ -27,21 +29,21 @@
     column-gap: 18px;
     @extend %list;
 
-    @media screen and (max-width: $laptop-width) {
+    @media screen and (max-width: m.$laptop-width) {
       margin-right: 24px;
     }
 
-    @media screen and (max-width: $tablet-width) {
+    @media screen and (max-width: m.$tablet-width) {
       margin: 30px 16px 0 0;
     }
   }
 
   &__lang-link {
-    @include font-size-height(24px, 1.16);
+    @include m.font-size-height(24px, 1.16);
     @extend %link;
 
-    @media screen and (max-width: $tablet-width) {
-      @include font-size-height(18px, 1.11);
+    @media screen and (max-width: m.$tablet-width) {
+      @include m.font-size-height(18px, 1.11);
     }
 
     &_selected {

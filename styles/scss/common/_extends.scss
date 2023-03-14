@@ -1,5 +1,7 @@
+@use './variables' as v;
+
 %link {
-  color: $main-font-color;
+  color: v.$main-font-color;
   text-decoration: none;
   &:hover {
     opacity: 0.8;
@@ -7,7 +9,7 @@
 }
 
 %underline {
-  border-bottom: 1px solid $main-font-color;
+  border-bottom: 1px solid v.$main-font-color;
 }
 
 %list {

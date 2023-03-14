@@ -1,15 +1,12 @@
-@import './common/reset';
-@import './common/variables';
-@import './common/mixin';
-@import './fonts/fonts';
-@import './common/extends';
+@use 'common/reset';
+@use 'fonts/fonts';
 
-@import './blocks/root';
-@import './blocks/header';
-@import './blocks/main';
-@import './blocks/lead';
-@import './blocks/intro';
-@import './blocks/photo';
-@import './blocks/places';
-@import './blocks/cover';
-@import './blocks/footer';
+@use 'blocks/root';
+@use 'blocks/header';
+@use 'blocks/main';
+@use 'blocks/lead';
+@use 'blocks/intro';
+@use 'blocks/photo';
+@use 'blocks/places';
+@use 'blocks/cover';
+@use 'blocks/footer';

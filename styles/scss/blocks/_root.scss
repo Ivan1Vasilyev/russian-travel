@@ -1,7 +1,9 @@
+@use '../common/main' as m;
+
 .root {
-  font-family: $main-font;
-  background: $background;
-  color: $main-font-color;
+  font-family: m.$main-font;
+  background: m.$background;
+  color: m.$main-font-color;
   min-width: 320px;
   max-width: 1280px;
   margin: 0 auto;
@@ -9,16 +11,16 @@
   &__cover {
     margin: 0 48px 92px;
 
-    @media screen and (max-width: $desktop-width) {
+    @media screen and (max-width: m.$desktop-width) {
       margin-left: 0;
       margin-right: 0;
     }
 
-    @media screen and (max-width: $laptop-width) {
+    @media screen and (max-width: m.$laptop-width) {
       margin-bottom: 88px;
     }
 
-    @media screen and (max-width: $tablet-width) {
+    @media screen and (max-width: m.$tablet-width) {
       margin-bottom: 64px;
     }
   }
@@ -26,15 +28,15 @@
   &__intro {
     margin-left: 148px;
 
-    @media screen and (max-width: $desktop-width) {
+    @media screen and (max-width: m.$desktop-width) {
       margin-left: 48px;
     }
 
-    @media screen and (max-width: $laptop-width) {
+    @media screen and (max-width: m.$laptop-width) {
       margin: 0 24px;
     }
 
-    @media screen and (max-width: $tablet-width) {
+    @media screen and (max-width: m.$tablet-width) {
       margin: 0 16px;
     }
   }
