@@ -27,7 +27,7 @@
     @include font-size-height(54px, 1.07);
     font-weight: $font-bolder;
 
-    @media screen and (max-width: $mobile-width-footer) {
+    @media screen and (max-width: $tablet-width) {
       @include font-size-height(32px, 1.09);
     }
   }

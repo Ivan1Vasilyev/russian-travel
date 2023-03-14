@@ -11,7 +11,7 @@
     @media screen and (max-width: $laptop-width) {
       margin-left: 24px;
     }
-    @media screen and (max-width: $mobile-width) {
+    @media screen and (max-width: $tablet-width) {
       margin: 4px 0 0 14px;
     }
   }
@@ -23,10 +23,10 @@
   &__image-wrap {
     margin: 0 148px;
 
-    @media screen and (max-width: $laptop-width) {
+    @media screen and (max-width: $desktop-width) {
       margin: 0 48px;
     }
-    @media screen and (max-width: $mobile-width) {
+    @media screen and (max-width: $laptop-width) {
       margin: 0;
     }
   }
@@ -44,7 +44,7 @@
       max-width: 288px;
       @include font-size-height(16px, 1.25);
     }
-    @media screen and (max-width: $mobile-width) {
+    @media screen and (max-width: $tablet-width) {
       margin-bottom: 40px;
     }
   }
@@ -60,11 +60,11 @@
       margin-top: 48px;
     }
     @media screen and (max-width: $laptop-width) {
-      max-width: 288px;
-      @include font-size-height(40px, 1.1);
     }
-    @media screen and (max-width: $mobile-width) {
+    @media screen and (max-width: $tablet-width) {
+      max-width: 288px;
       margin-bottom: 16px;
+      @include font-size-height(40px, 1.1);
     }
   }
 }

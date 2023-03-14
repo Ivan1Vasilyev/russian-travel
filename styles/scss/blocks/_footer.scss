@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: baseline;
 
-  @media screen and (max-width: $mobile-width-footer) {
+  @media screen and (max-width: $tablet-width) {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -15,7 +15,7 @@
     @media screen and (max-width: $laptop-width) {
       margin-right: 24px;
     }
-    @media screen and (max-width: $mobile-width-footer) {
+    @media screen and (max-width: $tablet-width) {
       line-height: 1;
       margin-left: 16px;
       margin-top: 16px;
@@ -30,7 +30,7 @@
     @media screen and (max-width: $laptop-width) {
       margin-left: 24px;
     }
-    @media screen and (max-width: $mobile-width-footer) {
+    @media screen and (max-width: $tablet-width) {
       flex-direction: column;
       margin-left: 16px;
     }
@@ -41,7 +41,7 @@
     @include font-size-height(16px, 1.12);
     margin-right: 15px;
 
-    @media screen and (max-width: $mobile-width-footer) {
+    @media screen and (max-width: $tablet-width) {
       display: inline-block;
       margin-bottom: 32px;
       @include font-size-height(24px, 1);
