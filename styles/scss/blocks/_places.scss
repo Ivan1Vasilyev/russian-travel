@@ -83,7 +83,7 @@
     grid-area: title;
 
     @media screen and (max-width: $laptop-width) {
-      @include font-size-height(18px, 1.09);
+      @include font-size-height(42px, 1.09);
       max-width: 320px;
     }
     @media screen and (max-width: $mobile-width-places) {
