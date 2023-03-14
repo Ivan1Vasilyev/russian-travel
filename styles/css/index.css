@@ -406,7 +406,7 @@ template {
   justify-content: space-between;
 }
 .header__logo {
-  background-image: url(../../../images/__logo.svg);
+  background-image: url(../../images/logo.svg);
   background-size: cover;
   width: 176px;
   height: 52px;
@@ -749,7 +749,7 @@ template {
 .cover__overlay {
   min-height: 740px;
   width: 100%;
-  background-image: url(../../../images/cover_background.jpg);
+  background-image: url(../../images/cover_background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
