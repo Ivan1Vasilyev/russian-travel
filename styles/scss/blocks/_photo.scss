@@ -9,14 +9,14 @@
     gap: 16px;
     @extend %list;
 
-    @media screen and (max-width: m.$desktop-width) {
+    @media screen and (max-width: m.$breakpoint-desktop) {
       gap: 14px;
     }
-    @media screen and (max-width: m.$laptop-width) {
+    @media screen and (max-width: m.$breakpoint-laptop) {
       margin: 0 24px;
       gap: 16px;
     }
-    @media screen and (max-width: m.$tablet-width) {
+    @media screen and (max-width: m.$breakpoint-tablet) {
       margin: 0 16px;
       gap: 12px;
     }

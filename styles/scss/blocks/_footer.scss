@@ -5,7 +5,7 @@
   justify-content: space-between;
   align-items: baseline;
 
-  @media screen and (max-width: m.$tablet-width) {
+  @media screen and (max-width: m.$breakpoint-tablet) {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -14,10 +14,10 @@
     @include m.font-size-height(14px, 1.14);
     margin: 0 48px 24px 0;
 
-    @media screen and (max-width: m.$laptop-width) {
+    @media screen and (max-width: m.$breakpoint-laptop) {
       margin-right: 24px;
     }
-    @media screen and (max-width: m.$tablet-width) {
+    @media screen and (max-width: m.$breakpoint-tablet) {
       line-height: 1;
       margin-left: 16px;
       margin-top: 16px;
@@ -29,10 +29,10 @@
     display: flex;
     @extend %list;
 
-    @media screen and (max-width: m.$laptop-width) {
+    @media screen and (max-width: m.$breakpoint-laptop) {
       margin-left: 24px;
     }
-    @media screen and (max-width: m.$tablet-width) {
+    @media screen and (max-width: m.$breakpoint-tablet) {
       flex-direction: column;
       margin-left: 16px;
     }
@@ -43,7 +43,7 @@
     @include m.font-size-height(16px, 1.12);
     margin-right: 15px;
 
-    @media screen and (max-width: m.$tablet-width) {
+    @media screen and (max-width: m.$breakpoint-tablet) {
       display: inline-block;
       margin-bottom: 32px;
       @include m.font-size-height(24px, 1);

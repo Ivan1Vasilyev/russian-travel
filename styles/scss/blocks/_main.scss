@@ -7,11 +7,11 @@
   align-items: center;
   row-gap: 92px;
 
-  @media screen and (max-width: m.$laptop-width) {
+  @media screen and (max-width: m.$breakpoint-laptop) {
     row-gap: 88px;
   }
 
-  @media screen and (max-width: m.$tablet-width) {
+  @media screen and (max-width: m.$breakpoint-tablet) {
     row-gap: 64px;
   }
 }

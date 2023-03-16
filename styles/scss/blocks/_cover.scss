@@ -28,13 +28,13 @@
       background-color: m.$overlay-hover;
     }
 
-    @media screen and (max-width: m.$desktop-width) {
+    @media screen and (max-width: m.$breakpoint-desktop) {
       min-height: 640px;
     }
-    @media screen and (max-width: m.$laptop-width) {
+    @media screen and (max-width: m.$breakpoint-laptop) {
       min-height: 480px;
     }
-    @media screen and (max-width: m.$mobile-width) {
+    @media screen and (max-width: m.$breakpoint-mobile) {
       background-image: url(../../images/cover_background_640x400.jpg);
       min-height: 200px;
     }
@@ -48,7 +48,7 @@
     margin: 0 0 32px;
     z-index: 2;
 
-    @media screen and (max-width: m.$mobile-width) {
+    @media screen and (max-width: m.$breakpoint-mobile) {
       @include m.font-size-height(32px, 1.09);
       margin-bottom: 16px;
       max-width: 250px;
@@ -62,7 +62,7 @@
     margin: 0;
     z-index: 2;
 
-    @media screen and (max-width: m.$mobile-width) {
+    @media screen and (max-width: m.$breakpoint-mobile) {
       @include m.font-size-height(14px, 1.14);
       margin: 0 16px;
     }

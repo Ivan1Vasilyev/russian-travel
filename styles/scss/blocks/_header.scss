@@ -11,11 +11,11 @@
     height: 52px;
     margin: 28px 0 0 48px;
 
-    @media screen and (max-width: m.$laptop-width) {
+    @media screen and (max-width: m.$breakpoint-laptop) {
       margin-left: 24px;
     }
 
-    @media screen and (max-width: m.$tablet-width) {
+    @media screen and (max-width: m.$breakpoint-tablet) {
       width: 142px;
       height: 42px;
       margin: 16px 0 0 16px;
@@ -29,11 +29,11 @@
     column-gap: 18px;
     @extend %list;
 
-    @media screen and (max-width: m.$laptop-width) {
+    @media screen and (max-width: m.$breakpoint-laptop) {
       margin-right: 24px;
     }
 
-    @media screen and (max-width: m.$tablet-width) {
+    @media screen and (max-width: m.$breakpoint-tablet) {
       margin: 30px 16px 0 0;
     }
   }
@@ -42,7 +42,7 @@
     @include m.font-size-height(24px, 1.16);
     @extend %link;
 
-    @media screen and (max-width: m.$tablet-width) {
+    @media screen and (max-width: m.$breakpoint-tablet) {
       @include m.font-size-height(18px, 1.11);
     }
 
