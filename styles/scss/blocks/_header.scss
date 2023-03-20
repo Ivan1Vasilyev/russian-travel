@@ -39,11 +39,11 @@
   }
 
   &__lang-link {
-    @include m.font-size-height(24px, 1.16);
+    font: 24px/1.16;
     @extend %link;
 
     @media screen and (max-width: m.$breakpoint-tablet) {
-      @include m.font-size-height(18px, 1.11);
+      font: 18px/1.11;
     }
 
     &_selected {

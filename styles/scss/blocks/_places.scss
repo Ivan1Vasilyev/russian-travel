@@ -41,7 +41,7 @@
   }
 
   &__paragraph {
-    @include m.font-size-height(18px, 1.63);
+    font: 18px/1.63;
     margin: 0 0 26px;
 
     &:last-of-type {
@@ -78,31 +78,31 @@
   }
 
   &__title {
-    @include m.font-size-height(72px, 1.06);
+    font: 72px/1.06;
     font-weight: m.$font-bolder;
     max-width: 540px;
     margin: 0 0 48px;
     grid-area: title;
 
     @media screen and (max-width: m.$breakpoint-laptop) {
-      @include m.font-size-height(42px, 1.09);
+      font: 42px/1.09;
       max-width: 320px;
     }
     @media screen and (max-width: m.$breakpoint-mobile) {
       margin: 0 0 0 16px;
-      @include m.font-size-height(32px, 1.09);
+      font: 32px/1.09;
     }
   }
 
   &__url-heading {
     color: m.$gray-font-color;
-    @include m.font-size-height(12px, 1);
+    font: 12px/1;
     letter-spacing: 2px;
     margin: 0 0 12px;
   }
 
   &__url-link {
-    @include m.font-size-height(18px, 1.22);
+    font: 18px/1.22;
     margin-bottom: 46px;
     @extend %link;
     @extend %underline;

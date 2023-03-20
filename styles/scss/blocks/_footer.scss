@@ -11,7 +11,7 @@
   }
 
   &__copyright {
-    @include m.font-size-height(14px, 1.14);
+    font: 14px/1.14;
     margin: 0 48px 24px 0;
 
     @media screen and (max-width: m.$breakpoint-laptop) {
@@ -40,13 +40,13 @@
 
   &__link {
     @extend %link;
-    @include m.font-size-height(16px, 1.12);
+    font: 16px/1.12;
     margin-right: 15px;
 
     @media screen and (max-width: m.$breakpoint-tablet) {
       display: inline-block;
       margin-bottom: 32px;
-      @include m.font-size-height(24px, 1);
+      font: 24px/1;
     }
   }
 }

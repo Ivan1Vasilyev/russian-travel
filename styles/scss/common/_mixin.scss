@@ -4,8 +4,3 @@
   font-weight: $weight;
   src: url('#{$url}2') format('woff2'), url($url) format('woff');
 }
-
-@mixin font-size-height($size, $height) {
-  font-size: $size;
-  line-height: $height;
-}

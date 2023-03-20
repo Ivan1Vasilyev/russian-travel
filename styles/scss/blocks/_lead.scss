@@ -5,7 +5,7 @@
   align-items: center;
 
   &__caption {
-    @include m.font-size-height(10px, 1.4);
+    font: 10px/1.4;
     letter-spacing: 1.5px;
     text-transform: uppercase;
     margin-top: 6px;
@@ -35,7 +35,7 @@
 
   &__subtitle {
     max-width: 640px;
-    @include m.font-size-height(30px, 1.2);
+    font: 30px/1.2;
     text-align: center;
     margin: 0 auto 64px;
 
@@ -44,7 +44,7 @@
     }
     @media screen and (max-width: m.$breakpoint-laptop) {
       max-width: 288px;
-      @include m.font-size-height(16px, 1.25);
+      font: 16px/1.25;
     }
     @media screen and (max-width: m.$breakpoint-tablet) {
       margin-bottom: 40px;
@@ -53,7 +53,7 @@
 
   &__title {
     max-width: 720px;
-    @include m.font-size-height(96px, 1.04);
+    font: 96px/1.04;
     font-weight: m.$font-bolder;
     text-align: center;
     margin: 56px auto 32px;
@@ -66,7 +66,7 @@
     @media screen and (max-width: m.$breakpoint-tablet) {
       max-width: 288px;
       margin-bottom: 16px;
-      @include m.font-size-height(40px, 1.1);
+      font: 40px/1.1;
     }
   }
 }

@@ -10,7 +10,7 @@
 
   &__list {
     margin: 0;
-    @include m.font-size-height(12px, 1.5);
+    font: 12px/1.5;
     font-weight: m.$font-bold;
     @extend %list;
   }
@@ -21,16 +21,16 @@
 
   &__text {
     margin: 40px auto 33px;
-    @include m.font-size-height(16px, 1.63);
+    font: 16px/1.63;
   }
 
   &__title {
     margin: 0;
-    @include m.font-size-height(54px, 1.07);
+    font: 54px/1.07;
     font-weight: m.$font-bolder;
 
     @media screen and (max-width: m.$breakpoint-tablet) {
-      @include m.font-size-height(32px, 1.09);
+      font: 32px/1.09;
     }
   }
 }

@@ -41,7 +41,7 @@
   }
 
   &__title {
-    @include m.font-size-height(72px, 1.06);
+    font: 72px/1.06;
     font-weight: m.$font-bolder;
     max-width: 560px;
     text-align: center;
@@ -49,21 +49,21 @@
     z-index: 2;
 
     @media screen and (max-width: m.$breakpoint-mobile) {
-      @include m.font-size-height(32px, 1.09);
+      font: 32px/1.09;
       margin-bottom: 16px;
       max-width: 250px;
     }
   }
 
   &__subtitle {
-    @include m.font-size-height(18px, 1.22);
+    font: 18px/1.22;
     max-width: 360px;
     text-align: center;
     margin: 0;
     z-index: 2;
 
     @media screen and (max-width: m.$breakpoint-mobile) {
-      @include m.font-size-height(14px, 1.14);
+      font: 14px/1.14;
       margin: 0 16px;
     }
   }
