@@ -28,42 +28,44 @@
       background-color: m.$overlay-hover;
     }
 
-    @media screen and (max-width: m.$breakpoint-desktop) {
+    @include m.desktop {
       min-height: 640px;
     }
-    @media screen and (max-width: m.$breakpoint-laptop) {
+
+    @include m.laptop {
       min-height: 480px;
     }
-    @media screen and (max-width: m.$breakpoint-mobile) {
+
+    @include m.mobile {
       background-image: url(../../images/cover_background_640x400.jpg);
       min-height: 200px;
     }
   }
 
   &__title {
-    font: 72px/1.06;
+    @include m.font(72px, 1.06);
     font-weight: m.$font-bolder;
     max-width: 560px;
     text-align: center;
     margin: 0 0 32px;
     z-index: 2;
 
-    @media screen and (max-width: m.$breakpoint-mobile) {
-      font: 32px/1.09;
+    @include m.mobile {
+      @include m.font(32px, 1.09);
       margin-bottom: 16px;
       max-width: 250px;
     }
   }
 
   &__subtitle {
-    font: 18px/1.22;
+    @include m.font(18px, 1.22);
     max-width: 360px;
     text-align: center;
     margin: 0;
     z-index: 2;
 
-    @media screen and (max-width: m.$breakpoint-mobile) {
-      font: 14px/1.14;
+    @include m.mobile {
+      @include m.font(14px, 1.14);
       margin: 0 16px;
     }
   }

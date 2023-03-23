@@ -6,10 +6,11 @@
   justify-items: center;
   gap: 80px;
 
-  @media screen and (max-width: m.$breakpoint-laptop) {
+  @include m.laptop {
     gap: 72px;
   }
-  @media screen and (max-width: m.$breakpoint-mobile) {
+
+  @include m.mobile {
     gap: 50px;
   }
 
@@ -22,13 +23,15 @@
       'title website'
       'image paragraph';
 
-    @media screen and (max-width: m.$breakpoint-laptop) {
+    @include m.laptop {
       margin: 0 24px;
     }
-    @media screen and (max-width: m.$breakpoint-tablet) {
+
+    @include m.tablet {
       margin: 0 16px;
     }
-    @media screen and (max-width: m.$breakpoint-mobile) {
+
+    @include m.mobile {
       margin: 0;
       grid-template-columns: 1fr;
       grid-template-areas:
@@ -41,14 +44,14 @@
   }
 
   &__paragraph {
-    font: 18px/1.63;
+    @include m.font(18px, 1.63);
     margin: 0 0 26px;
 
     &:last-of-type {
       margin-bottom: 0;
     }
 
-    @media screen and (max-width: m.$breakpoint-laptop) {
+    @include m.laptop {
       font-size: 16px;
     }
   }
@@ -57,13 +60,15 @@
     grid-area: image;
     width: calc(100% - 32px);
 
-    @media screen and (max-width: m.$breakpoint-desktop) {
+    @include m.desktop {
       width: calc(100% - 24px);
     }
-    @media screen and (max-width: m.$breakpoint-laptop) {
+
+    @include m.laptop {
       width: calc(100% - 20px);
     }
-    @media screen and (max-width: m.$breakpoint-mobile) {
+
+    @include m.mobile {
       width: 100%;
     }
   }
@@ -72,42 +77,43 @@
     padding-left: 8px;
     grid-area: paragraph;
 
-    @media screen and (max-width: m.$breakpoint-mobile) {
+    @include m.mobile {
       margin: 0 16px 0 8px;
     }
   }
 
   &__title {
-    font: 72px/1.06;
+    @include m.font(72px, 1.06);
     font-weight: m.$font-bolder;
     max-width: 540px;
     margin: 0 0 48px;
     grid-area: title;
 
-    @media screen and (max-width: m.$breakpoint-laptop) {
-      font: 42px/1.09;
+    @include m.laptop {
+      @include m.font(42px, 1.09);
       max-width: 320px;
     }
-    @media screen and (max-width: m.$breakpoint-mobile) {
+
+    @include m.mobile {
       margin: 0 0 0 16px;
-      font: 32px/1.09;
+      @include m.font(32px, 1.09);
     }
   }
 
   &__url-heading {
     color: m.$gray-font-color;
-    font: 12px/1;
+    @include m.font(12px, 1);
     letter-spacing: 2px;
     margin: 0 0 12px;
   }
 
   &__url-link {
-    font: 18px/1.22;
+    @include m.font(18px, 1.22);
     margin-bottom: 46px;
     @extend %link;
     @extend %underline;
 
-    @media screen and (max-width: m.$breakpoint-mobile) {
+    @include m.mobile {
       margin-bottom: 0;
     }
   }
@@ -119,7 +125,7 @@
     align-items: flex-start;
     padding-left: 8px;
 
-    @media screen and (max-width: m.$breakpoint-mobile) {
+    @include m.mobile {
       margin-left: 8px;
     }
   }

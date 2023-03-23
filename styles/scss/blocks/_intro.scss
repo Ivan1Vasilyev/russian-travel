@@ -4,13 +4,13 @@
   @extend %flex-column;
   max-width: 690px;
 
-  @media screen and (max-width: m.$breakpoint-laptop) {
+  @include m.laptop {
     max-width: 100%;
   }
 
   &__list {
     margin: 0;
-    font: 12px/1.5;
+    @include m.font(12px, 1.5);
     font-weight: m.$font-bold;
     @extend %list;
   }
@@ -21,16 +21,16 @@
 
   &__text {
     margin: 40px auto 33px;
-    font: 16px/1.63;
+    @include m.font(16px, 1.63);
   }
 
   &__title {
     margin: 0;
-    font: 54px/1.07;
+    @include m.font(54px, 1.07);
     font-weight: m.$font-bolder;
 
-    @media screen and (max-width: m.$breakpoint-tablet) {
-      font: 32px/1.09;
+    @include m.tablet {
+      @include m.font(32px, 1.09);
     }
   }
 }

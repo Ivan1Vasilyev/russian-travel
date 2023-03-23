@@ -5,15 +5,16 @@
   align-items: center;
 
   &__caption {
-    font: 10px/1.4;
+    @include m.font(10px, 1.4);
     letter-spacing: 1.5px;
     text-transform: uppercase;
     margin-top: 6px;
 
-    @media screen and (max-width: m.$breakpoint-laptop) {
+    @include m.laptop {
       margin-left: 24px;
     }
-    @media screen and (max-width: m.$breakpoint-tablet) {
+
+    @include m.tablet {
       margin: 4px 0 0 14px;
     }
   }
@@ -25,48 +26,50 @@
   &__image-wrap {
     margin: 0 148px;
 
-    @media screen and (max-width: m.$breakpoint-desktop) {
+    @include m.desktop {
       margin: 0 48px;
     }
-    @media screen and (max-width: m.$breakpoint-laptop) {
+
+    @include m.laptop {
       margin: 0;
     }
   }
 
   &__subtitle {
     max-width: 640px;
-    font: 30px/1.2;
+    @include m.font(30px, 1.2);
     text-align: center;
     margin: 0 auto 64px;
 
-    @media screen and (max-width: m.$breakpoint-desktop) {
+    @include m.desktop {
       margin-bottom: 56px;
     }
-    @media screen and (max-width: m.$breakpoint-laptop) {
+
+    @include m.laptop {
       max-width: 288px;
-      font: 16px/1.25;
+      @include m.font(16px, 1.25);
     }
-    @media screen and (max-width: m.$breakpoint-tablet) {
+
+    @include m.tablet {
       margin-bottom: 40px;
     }
   }
 
   &__title {
     max-width: 720px;
-    font: 96px/1.04;
+    @include m.font(96px, 1.04);
     font-weight: m.$font-bolder;
     text-align: center;
     margin: 56px auto 32px;
 
-    @media screen and (max-width: m.$breakpoint-desktop) {
+    @include m.desktop {
       margin-top: 48px;
     }
-    @media screen and (max-width: m.$breakpoint-laptop) {
-    }
-    @media screen and (max-width: m.$breakpoint-tablet) {
+
+    @include m.tablet {
       max-width: 288px;
       margin-bottom: 16px;
-      font: 40px/1.1;
+      @include m.font(40px, 1.1);
     }
   }
 }

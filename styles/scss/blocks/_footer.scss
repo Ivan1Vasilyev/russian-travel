@@ -5,19 +5,19 @@
   justify-content: space-between;
   align-items: baseline;
 
-  @media screen and (max-width: m.$breakpoint-tablet) {
+  @include m.tablet {
     flex-direction: column;
     align-items: flex-start;
   }
 
   &__copyright {
-    font: 14px/1.14;
+    @include m.font(14px, 1.14);
     margin: 0 48px 24px 0;
 
-    @media screen and (max-width: m.$breakpoint-laptop) {
+    @include m.laptop {
       margin-right: 24px;
     }
-    @media screen and (max-width: m.$breakpoint-tablet) {
+    @include m.tablet {
       line-height: 1;
       margin-left: 16px;
       margin-top: 16px;
@@ -29,10 +29,11 @@
     display: flex;
     @extend %list;
 
-    @media screen and (max-width: m.$breakpoint-laptop) {
+    @include m.laptop {
       margin-left: 24px;
     }
-    @media screen and (max-width: m.$breakpoint-tablet) {
+
+    @include m.tablet {
       flex-direction: column;
       margin-left: 16px;
     }
@@ -40,13 +41,13 @@
 
   &__link {
     @extend %link;
-    font: 16px/1.12;
+    @include m.font(16px, 1.12);
     margin-right: 15px;
 
-    @media screen and (max-width: m.$breakpoint-tablet) {
+    @include m.tablet {
       display: inline-block;
       margin-bottom: 32px;
-      font: 24px/1;
+      @include m.font(24px, 1);
     }
   }
 }

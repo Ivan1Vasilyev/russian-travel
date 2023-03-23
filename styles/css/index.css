@@ -314,7 +314,7 @@ template {
   text-decoration: none;
 }
 .footer__link:hover, .cover__overlay:hover, .places__url-link:hover, .header__lang-link:hover {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 .places__url-link, .header__lang-link_selected {

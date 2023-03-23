@@ -1,6 +1,37 @@
+@use './variables' as v;
+
 @mixin font-face($weight, $url) {
   font-family: 'Inter';
   font-style: normal;
   font-weight: $weight;
   src: url('#{$url}2') format('woff2'), url($url) format('woff');
+}
+
+@mixin font($size, $height) {
+  font-size: $size;
+  line-height: $height;
+}
+
+@mixin mobile {
+  @media screen and (max-width: v.$breakpoint-mobile) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: v.$breakpoint-tablet) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media screen and (max-width: v.$breakpoint-laptop) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (max-width: v.$breakpoint-desktop) {
+    @content;
+  }
 }

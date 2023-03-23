@@ -11,11 +11,11 @@
     height: 52px;
     margin: 28px 0 0 48px;
 
-    @media screen and (max-width: m.$breakpoint-laptop) {
+    @include m.laptop {
       margin-left: 24px;
     }
 
-    @media screen and (max-width: m.$breakpoint-tablet) {
+    @include m.tablet {
       width: 142px;
       height: 42px;
       margin: 16px 0 0 16px;
@@ -29,21 +29,21 @@
     column-gap: 18px;
     @extend %list;
 
-    @media screen and (max-width: m.$breakpoint-laptop) {
+    @include m.laptop {
       margin-right: 24px;
     }
 
-    @media screen and (max-width: m.$breakpoint-tablet) {
+    @include m.tablet {
       margin: 30px 16px 0 0;
     }
   }
 
   &__lang-link {
-    font: 24px/1.16;
+    @include m.font(24px, 1.16);
     @extend %link;
 
-    @media screen and (max-width: m.$breakpoint-tablet) {
-      font: 18px/1.11;
+    @include m.tablet {
+      @include m.font(18px, 1.11);
     }
 
     &_selected {
